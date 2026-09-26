@@ -1,5 +1,5 @@
 from fastapi import APIRouter, HTTPException
-from pydantic import BaseModel, Field
+from pydantic import BaseModel
 
 from app.models.workflow import Workflow
 from app.services.workflow_service import WorkflowService
@@ -9,7 +9,7 @@ router = APIRouter(tags=["workflows"])
 
 class WorkflowCreateRequest(BaseModel):
     name: str
-    description: str
+    description: str = ""
     intent: str
 
 

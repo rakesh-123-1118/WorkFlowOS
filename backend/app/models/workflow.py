@@ -5,7 +5,7 @@ from pydantic import BaseModel, Field
 
 
 class WorkflowEvent(BaseModel):
-    event_id: str
+    event_id: Optional[str] = None
     source: str
     event_type: str
     timestamp: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))

@@ -130,6 +130,15 @@ h1 {
   border-radius: 16px;
 }
 
+.highlight-card {
+  border-color: rgba(122, 92, 255, 0.5);
+  background: rgba(29, 22, 54, 0.75);
+}
+
+.empty-card {
+  opacity: 0.8;
+}
+
 .workflow-header {
   display: flex;
   justify-content: space-between;
